@@ -11,39 +11,123 @@
 }
 
 body {
-  background-color: lightgray;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .wrapper { /* Centro l'intero contenuto e lo stacco dal body */
   max-width:900px;
   margin: 20px auto;
-  background-color: white;
 }
 
-header {
-  height:100px;
+.layover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
 }
+
+/*
+#######################
+Inizio Regole di header e Nav
+#######################
+*/
+
+header img#logo {
+  height:50px;
+}
+
+nav ul#menu {
+  list-style: none;
+}
+
+nav ul#menu li {
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 50px;
+  margin-right: 20px;
+  color: gray;
+}
+
+/*
+#######################
+Fine Regole header/Nav
+#######################
+*/
+
+
+/*
+############################
+ Inizio Regole Slider/Img.Hero
+############################
+*/
 
 section#image-hero {
-  height: 400px;
+  position: relative;
   margin: 20px auto;
+  overflow:hidden;
+  background-color: #feebe4;
+}
+section#image-hero img {
+  bottom:15%;
+  width:100%;
+}
+
+.text-over {
+  position: absolute;
+  bottom: 0;
+  width:60%;
+  padding:5%;
+  color:white;
+}
+
+.text-over h2 {
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+/*
+############################
+ Fine Regole Slider/Img.Hero
+############################
+*/
+
+.image-container {
+  width:100%;
+  height:175px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width:100%;
 }
 
 .inner-article > div {
   float: left;  /* Tutti i figli diretti di inner-article saranno flottati a sinistra */
-  border: 1px solid black;
+}
+
+.inner-article h3 {
+  font-size: 25px;
+  line-height: 50px;
+  font-weight: 600;
 }
 
 .inner-article > #barra-superiore {
-  height:60px;
   width: 100%;
+  padding: 20px 0;
 }
 
-.inner-article > .colonna {
-  min-height: 200px;
+.inner-article > #barra-superiore h1 {
+  font-size: 45px;
+  line-height: 60px;
 }
+
 .inner-article > .colonna#colonna-centrale {
-  width:60%;
+  width:57%;
+  margin: 0 1.5%;
 }
 .inner-article > .colonna#colonna-sinistra ,
 .inner-article > .colonna#colonna-destra {
@@ -52,24 +136,11 @@ section#image-hero {
 
 footer {
   height: 50px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 30px auto;
+  text-align: center;
 }
 
-/* Da qui in poi solo colori di background (assegnazioni provvisorie) */
-header {
-  background-color: #e579e6;
+footer .evidenziato {
+  color:red;
+  font-size: 35px;
 }
-section#image-hero {
-  background-color: #e1d67a;
-}
-.inner-article {
-  background-color: #0086ff;
-}
-.colonna , div#barra-superiore {
-  background-color: #abcfe7;
-}
-footer {
-  background-color: #8801fe;
-}
-/* Fine assegnazione colori */
