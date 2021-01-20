@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="it" dir="ltr">
   <head>
-    <!-- Link ad eventuali font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/master.css">
     <meta charset="utf-8">
     <title>Emulazione di un classico Blog Wordpress</title>
@@ -28,52 +29,55 @@
       <main>
 
         <section id="image-hero">
-            <div class="layover">
-              <img src="img/banner.jpg" alt="banner">
-              <div class="text-over">
-                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </h2>
-                <p>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
+          <div class="layover">
+            <img src="img/banner.jpg" alt="banner">
+            <div class="text-over">
+              <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </h2>
+              <p>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
           </div>
         </section>
 
-        <div class="inner-article clearfix">
+        <!-- Inizio della parte principale della pagina (sezione con barra superiore e tre colonne) -->
+        <section class="inner-article clearfix">
 
           <div id="barra-superiore"> <!-- Barra superiore con il titolo dell'articolo -->
             <h1>Lorem Ipsum</h1>
-            <p>dolor sit amet</p>
+            <p>dolor sit amet consectetur adipisicing</p>
           </div>
 
-          <div class="colonna" id="colonna-sinistra">
+          <div id="colonna-sinistra">
             <div class="layover">
               <img src="img/img-1.jpg" alt="immagine 1">
             </div>
             <h3>lorem</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
 
-          <div class="colonna" id="colonna-centrale">
+          <div id="colonna-centrale">
             <div class="layover">
-              <img src="img/banner-2.jpg" alt="immagine 1">
+              <img src="img/banner-2.jpg" alt="immagine 2">
             </div>
             <h3>lorem</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
 
-          <div class="colonna" id="colonna-destra">
+          <div id="colonna-destra">
             <div class="layover">
-              <img src="img/img-3.jpg" alt="immagine 1">
+              <img src="img/img-3.jpg" alt="immagine 3">
             </div>
             <h3>lorem</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
 
-        </div> <!-- Fine inner-container -->
+        </section>
+        <!-- Fine parte principale della pagina (sezione con barra superiore e tre colonne) -->
 
-      </main>
+      </main> <!-- Fine main -->
 
-      <footer> Made with <span class="evidenziato">&hearts;</span> in Riposto</footer>
+      <footer> Made with <img src="img/duck.png" alt="mascotte di boolean"> in Boolean</footer>
 
     </div> <!-- Fine Wrapper -->
+
   </body>
 </html>
